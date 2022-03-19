@@ -253,7 +253,7 @@ span.uppercase {
   text-indent: 50px;
   font-size: 18px;
   text-align: justify;
-/*   animation: showing-text 2s linear; */
+  animation: showing-text 2s linear;
   text-shadow: 50px 10px 55px rgba(255, 0, 0, 1);
 }
 .name__story {
@@ -349,6 +349,9 @@ a.slogan__item__contact:hover,
   .contact__item a span {
     font-size: 15px;
   }
+  .text__story {
+    text-shadow: none;
+  }
 }
 /* Big Mobile*/
 @media (max-width: 767.98px) {
@@ -368,6 +371,9 @@ a.slogan__item__contact:hover,
   .contact__item a,
   .contact__item a span {
     font-size: 14px;
+  }
+  .text__story {
+    text-shadow: none;
   }
 }
 /* Middle Mobile*/
@@ -409,6 +415,9 @@ a.slogan__item__contact:hover,
     span.uppercase {
     font-size: 48px;
   }
+  .text__story {
+    text-shadow: none;
+  }
 }
 @media (max-width: 464.98px) {
   .menu__list {
@@ -417,6 +426,9 @@ a.slogan__item__contact:hover,
   }
   .menu__link.other {
     display: none;
+  }
+  .text__story {
+    text-shadow: none;
   }
 }
 /* Small Mobile */
@@ -448,5 +460,8 @@ a.slogan__item__contact:hover,
   .list__container ol.list__stories {
     margin: 100px auto 100px 0;
     font-size: 20px;
+  }
+  .text__story {
+    text-shadow: none;
   }
 }
