@@ -254,7 +254,7 @@ span.uppercase {
   font-size: 18px;
   text-align: justify;
 /*   animation: showing-text 2s linear; */
-/*   text-shadow: 50px 10px 55px rgba(255, 0, 0, 1); */
+  text-shadow: 50px 10px 55px rgba(255, 0, 0, 1);
 }
 .name__story {
   text-align: center;
