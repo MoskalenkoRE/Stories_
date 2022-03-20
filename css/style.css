@@ -81,6 +81,7 @@ h6 {
 }
 .menu__link {
   text-transform: uppercase;
+  padding-bottom: 5px;
   font-weight: 700;
   line-height: 1.2;
   color: rgb(255, 255, 255);
@@ -142,7 +143,7 @@ a.slogan__item__contact {
 .story__container_second,
 .story__container_third {
   display: flex;
-  padding: 50px 0 700px 0;
+  padding: 50px 0 400px 0;
   justify-content: center;
 }
 .story__summary {
@@ -189,7 +190,7 @@ li.container__story__link a {
   background: rgba(255, 0, 0, 0.7);
 }
 .story__container_third {
-  padding: 50px 0 350px 0;
+  padding: 50px 0 150px 0;
 }
 .story__container_first {
   transition: all 1.5s ease-out;
@@ -218,15 +219,26 @@ li.container__story__link a {
   transform: none;
   opacity: 1;
 }
-.footer__container {
+.footer__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  margin: 20px auto;
+  padding: 0 auto;
+  font-size: 18px;
+}
+.contact {
+  display: flex;
+  margin: 5px auto;
 }
 .contact__item__telegram,
 .contact__item__whatsapp {
-  margin: 0px 40px 0px 40px;
-  font-size: 25px;
+  margin: 0px 20px 0px 40px;
+  padding-top: 5px;
   text-transform: lowercase;
   line-height: 1.2;
   color: rgb(255, 255, 255);
@@ -299,7 +311,8 @@ span.uppercase {
 ol.list__stories {
   display: flex;
   flex-direction: column;
-  margin: 100px auto 0px 100px;
+  margin: 100px 0 100px 100px;
+
   font-family: "Caveat", cursive;
   font-size: 22.5px;
   animation: showing-text-name 3s linear;
