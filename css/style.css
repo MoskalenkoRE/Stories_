@@ -279,16 +279,40 @@ span.uppercase {
 @keyframes showing-text {
   0% {
     transform: translateY(-100%);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-.menu__list,
-.header__logo,
 .slogan__item__contact {
+  animation: showing-slogan 7s linear infinite alternate;
+}
+@keyframes showing-slogan {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+.menu__list,
+.header__logo {
   animation: showing-menu 2s linear;
 }
 @keyframes showing-menu {
