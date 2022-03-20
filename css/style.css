@@ -227,9 +227,13 @@ li.container__story__link a {
 }
 .copyright {
   display: flex;
+  flex-direction: column-reverse;
   margin: 20px auto;
   padding: 0 auto;
   font-size: 18px;
+}
+.rights__item {
+  margin: 0 auto;
 }
 .contact {
   display: flex;
@@ -462,3 +466,4 @@ a.slogan__item__contact:hover,
     font-size: 20px;
   }
 }
+/* =========== */
