@@ -89,3 +89,47 @@ var Delighters = new (function () {
   self.init = init;
   self.config = config;
 })();
+
+document.querySelector(".themetoggle").addEventListener("click", (event) => {
+  event.preventDefault();
+  if (localStorage.getItem("theme") === "light") {
+    localStorage.removeItem("theme");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+  addlightClassToHTML();
+});
+
+function addlightClassToHTML() {
+  try {
+    if (localStorage.getItem("theme") === "light") {
+      document.querySelector("html").classList.add("light");
+      document.querySelector(".menu__link").classList.add("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.add("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.add("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.add("light");
+      document.querySelector(".themetoggle span").textContent = "dark_mode";
+    } else {
+      document.querySelector("html").classList.remove("light");
+      document.querySelector(".menu__link").classList.remove("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.remove("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.remove("light");
+      document
+        .querySelector(".list__stories__item__link")
+        .classList.remove("light");
+      document.querySelector(".themetoggle span").textContent = "wb_sunny";
+    }
+  } catch (err) {}
+}
+
+addlightClassToHTML();
